@@ -1,6 +1,6 @@
-angular.module('YhyApp').controller('shopController', function($rootScope, $scope, $http, $timeout) {
+angular.module('YhyApp').controller('productController', function($rootScope, $scope, $http, $timeout) {
 	$scope.$on('$viewContentLoaded', function() {
-	    var mySwiper = new Swiper ('.swiper-container', {
+		var mySwiper = new Swiper ('.swiper-container', {
 	    	direction: 'horizontal',
 	    	loop: true,
 	    

@@ -90,5 +90,45 @@ YhyApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, 
 				}]
 			}
 		})
+		.state('product', {
+			url: "/product",
+			templateUrl: "pages/product.html",
+			data: {
+				pageTitle: '产品详情'
+			},
+			controller: "productController",
+			resolve: {
+				deps: ['$ocLazyLoad', function($ocLazyLoad) {
+					return $ocLazyLoad.load({
+						name: 'YhyApp',
+						insertBefore: '#ng_load_plugins_before',
+						files: [
+							'js/controllers/productController.js',
+							'assets/global/js/swiper-3.4.2.min.js',
+						]
+					});
+				}]
+			}
+		})
+		.state('test', {
+			url: "/test",
+			templateUrl: "pages/test.html",
+			data: {
+				pageTitle: '测试'
+			},
+			controller: "testController",
+			resolve: {
+				deps: ['$ocLazyLoad', function($ocLazyLoad) {
+					return $ocLazyLoad.load({
+						name: 'YhyApp',
+						insertBefore: '#ng_load_plugins_before',
+						files: [
+							'js/controllers/testController.js',
+							'assets/global/js/swiper-3.4.2.min.js',
+						]
+					});
+				}]
+			}
+		})
 		
 }]);
