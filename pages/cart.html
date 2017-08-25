@@ -1,0 +1,25 @@
+<div ng-include="'common/top.html'" ng-controller="TopController" class=""></div>
+
+<div class="shopping-cart">
+    <ul class="cart-list">
+        <li ng-repeat="x in productList">
+            <div class="cart-left"><a href="javascript:;"><img src="assets/images/xiaoyi.png" alt="" /></a></div>
+            <div class="cart-right">
+                <a href="javascript:;">
+                    <p class="cart-item-tit">{{x.title}}</p>
+                    <i>¥{{x.price}}</i>
+                </a>  
+                <div class="cart-delete" ng-click="remove($index)"><img src="assets/images/delete.png" alt="" /></div>  
+                <div class="mod-modifier">
+                    <a href="javascript:;" class="modifier-sub" ng-click="sub($index)">-</a>
+                    <input type="text" class="num" ng-model="x.quantity"/>
+                    <a href="javascript:;" class="modifier-add" ng-click="add($index)">+</a>
+                </div>                    
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="cart-balance">
+    <p>商品总价：<span >¥ {{totalQuantity()}}</span></p>
+    <a href="javascript:;" class="balance-info">去结算</a>
+</div>

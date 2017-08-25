@@ -1,0 +1,32 @@
+<div ng-include="'common/top.html'" ng-controller="TopController" class=""></div>
+
+<div class="sort-tab">
+	<div class="st-left">
+		<div class="st-left-title">
+			产品分类
+		</div>
+		<ul class="st-left-list" ng-init='selected=0'>
+			<li ng-class='{active:selected==$index}' ng-click='show($index)' ng-repeat='item in series'>	
+				{{item.name}}
+			</li>
+		</ul>
+		<div class="st-left-title">
+			套餐分类
+		</div>
+		<ul class="st-left-list">
+			<li ng-class='{active:selected==$index+series.length}' ng-click='show($index+series.length)' ng-repeat='item in taocan'>{{item.name}}</li>
+		</ul>
+	</div>	
+	<div class="st-right">
+		<ul ng-show='selected==$index' ng-repeat='item in series'>
+			<li class="st-right-item">
+				<a>
+					<img src="assets/images/xiaoyi.png"/>
+					{{item.title}}
+				</a>			
+			</li>
+		</ul>
+		
+		<li class="st-right-item" ng-show='selected==$index+series.length' ng-repeat='item in taocan'>{{item.title}}</li>		
+	</div>
+</div>

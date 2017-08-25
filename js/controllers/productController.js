@@ -1,5 +1,8 @@
 angular.module('YhyApp').controller('productController', function($rootScope, $scope, $http, $timeout) {
 	$scope.$on('$viewContentLoaded', function() {
+		$scope.modal = {
+			title:'商品详情'
+		}
 		var mySwiper = new Swiper ('.swiper-container', {
 	    	direction: 'horizontal',
 	    	loop: true,
@@ -9,4 +12,7 @@ angular.module('YhyApp').controller('productController', function($rootScope, $s
 	    
 	  	})  
 	});
+	$scope.back = function() {
+		history.back();
+	};
 });

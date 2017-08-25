@@ -8,5 +8,13 @@ angular.module('YhyApp').controller('dashboardController', function($rootScope, 
 		    pagination: '.swiper-pagination',
 		    
 		  })  
+		  $scope.modal = {
+			imgUrl1: 'assets/images/home_fill.png',
+			imgUrl2: 'assets/images/shop.png',
+			imgUrl3: 'assets/images/my.png',
+			curr1: 'curr',
+			curr2: 'no-curr',
+			curr3: 'no-curr'
+		  }
 	});
 });
