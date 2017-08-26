@@ -1,0 +1,22 @@
+<div ng-include="'common/top.html'" ng-controller="TopController" class=""></div>
+
+<form method="post" action="" class="form-label">
+    <section class="user-login-frame">
+        <div id="usernum_div">
+            <label for="usernum">手机号：</label><input type="text" class="login_info" autocomplete="off" placeholder="输入手机号" name="usernum" id="usernum"/>
+        </div>
+        <div id="password_div">
+            <label for="password">密码：</label><input type="password" class="login_info" autocomplete="off" placeholder="输入密码" name="password" id="password"/>
+        </div>
+        <div id="identify_div">
+            <label for="usercode"></label><input type="text" class="" placeholder="输入验证码" id="usercode" />
+            <a href="#" class="send-code">获取手机验证码</a>
+        </div>
+        <div id="help_div">
+            <label for="help-per">推荐人:</label><input type="text" class="" placeholder="填写推荐人" id="help-per" />
+        </div>
+
+    </section>
+    <input type="submit" class="invoice-save-button" id="login_submit" value="注 册"/>
+    <a ui-sref="login" class="register-btn">登录>></a>
+</form>

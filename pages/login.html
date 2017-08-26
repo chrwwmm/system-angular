@@ -1,0 +1,15 @@
+<div ng-include="'common/top.html'" ng-controller="TopController" class=""></div>
+
+<form method="post" action="" class="form-label">
+    <section class="user-login-frame">
+        <div id="username_div">
+            <label for="username">账号：</label><input type="text" class="login_info" autocomplete="off" placeholder="输入用户名/手机号/邮箱" name="username" id="username"/>
+        </div>
+        <div id="password_div">
+            <label for="password">密码：</label><input type="password" class="login_info" autocomplete="off" placeholder="输入密码" name="password" id="password"/>
+        </div>
+    </section>
+    <input type="submit" class="invoice-save-button" id="login_submit" value="登 录"/>
+    <a ui-sref="register" class="register-btn">立即注册>></a>
+    <a href="javascript:;" class="forget-btn">忘记密码？</a>
+</form>

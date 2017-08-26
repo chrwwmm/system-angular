@@ -19,10 +19,10 @@
 	</div>	
 	<div class="st-right">
 		<ul ng-show='selected==$index' ng-repeat='item in series'>
-			<li class="st-right-item">
+			<li class="st-right-item" ng-repeat='p in item.product'>
 				<a>
-					<img src="assets/images/xiaoyi.png"/>
-					{{item.title}}
+					<img src="{{p.img}}"/>
+					{{p.title}}
 				</a>			
 			</li>
 		</ul>

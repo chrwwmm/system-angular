@@ -157,6 +157,63 @@ YhyApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, 
 				}]
 			}
 		})
+		.state('login', {
+			url: "/login",
+			templateUrl: "pages/login.html",
+			data: {
+				pageTitle: '登录'
+			},
+			controller: "loginController",
+			resolve: {
+				deps: ['$ocLazyLoad', function($ocLazyLoad) {
+					return $ocLazyLoad.load({
+						name: 'YhyApp',
+						insertBefore: '#ng_load_plugins_before',
+						files: [
+							'js/controllers/loginController.js',
+						]
+					});
+				}]
+			}
+		})
+		.state('register', {
+			url: "/register",
+			templateUrl: "pages/register.html",
+			data: {
+				pageTitle: '注册'
+			},
+			controller: "registerController",
+			resolve: {
+				deps: ['$ocLazyLoad', function($ocLazyLoad) {
+					return $ocLazyLoad.load({
+						name: 'YhyApp',
+						insertBefore: '#ng_load_plugins_before',
+						files: [
+							'js/controllers/registerController.js',
+						]
+					});
+				}]
+			}
+		})
+		.state('order', {
+			url: "/order",
+			templateUrl: "pages/order.html",
+			data: {
+				pageTitle: '订单'
+			},
+			controller: "orderController",
+			resolve: {
+				deps: ['$ocLazyLoad', function($ocLazyLoad) {
+					return $ocLazyLoad.load({
+						name: 'YhyApp',
+						insertBefore: '#ng_load_plugins_before',
+						files: [
+							'js/controllers/orderController.js',						
+						]
+					});
+				}]
+			}
+		})
 		.state('test', {
 			url: "/test",
 			templateUrl: "pages/test.html",

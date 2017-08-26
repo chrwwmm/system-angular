@@ -1,4 +1,4 @@
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0;}
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
 
@@ -21,5 +21,7 @@ td, th { padding: 0; text-align: left; }
 em, i { font-style: normal; }
 
 a{ text-decoration:none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+button,input{border: none;outline:medium;}
 
 .cf:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }

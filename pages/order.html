@@ -1,0 +1,272 @@
+<div ng-include="'common/top.html'" ng-controller="TopController" class=""></div>
+
+<div class="goods-order">
+    <ul class="gd-list-title">
+        <li class="od-current" ng-class="{ 'active' : data.current == 1 }" ng-click="actions.setCurrent(1)"><a href="javascript:;">全部</a></li>
+        <li ng-class="{ 'active' : data.current == 2 }" ng-click="actions.setCurrent(2)"><a href="javascript:;">待付款</a></li>
+        <li ng-class="{ 'active' : data.current == 3 }" ng-click="actions.setCurrent(3)"><a href="javascript:;">待发货</a></li>
+        <li ng-class="{ 'active' : data.current == 4 }" ng-click="actions.setCurrent(4)"><a href="javascript:;">待收货</a></li>
+        <li ng-class="{ 'active' : data.current == 5 }" ng-click="actions.setCurrent(5)"><a href="javascript:;">待评价</a></li>
+    </ul>
+    <ul class="goods-odr-list" ng-if="data.current == 1">
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待付款</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="firm-order.html" class="gol-delete">付款</a>
+                <a href="#" class="gol-pay">取消订单</a>
+            </div>
+        </li>
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待发货</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="#" class="gol-delete">提醒发货</a>
+                <a href="#" class="gol-pay">取消订单</a>
+            </div>
+        </li>
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待收货</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="#" class="gol-delete">确认收货</a>
+                <a href="#" class="gol-pay">查看订单</a>
+            </div>
+        </li>
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待评价</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="goods-evaluate.html" class="gol-delete">立即评价</a>
+                <a href="#" class="gol-pay">查看订单</a>
+            </div>
+        </li>
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>已完成</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="#" class="gol-pay">查看订单</a>
+            </div>
+        </li>
+    </ul>
+    <ul class="goods-odr-list" ng-if="data.current == 2">
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待付款</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="firm-order.html" class="gol-delete">付款</a>
+                <a href="#" class="gol-pay">取消订单</a>
+            </div>
+        </li>
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待付款</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="firm-order.html" class="gol-delete">付款</a>
+                <a href="#" class="gol-pay">取消订单</a>
+            </div>
+        </li>
+    </ul>
+    <ul class="goods-odr-list" ng-if="data.current == 3">
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待发货</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="#" class="gol-delete">提醒发货</a>
+                <a href="#" class="gol-pay">取消订单</a>
+            </div>
+        </li>
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待发货</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="#" class="gol-delete">提醒发货</a>
+                <a href="#" class="gol-pay">取消订单</a>
+            </div>
+        </li>
+    </ul>
+    <ul class="goods-odr-list" ng-if="data.current == 4">
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待收货</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="#" class="gol-delete">确认收货</a>
+                <a href="#" class="gol-pay">查看订单</a>
+            </div>
+        </li>
+    </ul>
+    <ul class="goods-odr-list" ng-if="data.current == 5">           
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待评价</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="goods-evaluate.html" class="gol-delete">立即评价</a>
+                <a href="#" class="gol-pay">查看订单</a>
+            </div>
+        </li>
+        <li>
+            <div class="gol-tit">
+                <h3>订单号：yijia201609260000</h3>
+                <span>待评价</span>
+            </div>
+            <div class="gol-item">
+                <a href="detail.html">
+                    <img src="assets/images/product images/智能语音机器人.png" alt="" />
+                    <p>人脸识别智能电子锁 家用防盗门锁</p>
+                    <em>¥1999.00</em>
+                    <i>X1</i>
+                </a>                   
+            </div>
+            <div class="gol-item-price">
+                <p>共1件商品，合计<span>1999</span>.00元</p>
+            </div>
+            <div class="gol-item-btn">
+                <a href="goods-evaluate.html" class="gol-delete">立即评价</a>
+                <a href="#" class="gol-pay">查看订单</a>
+            </div>
+        </li>
+    </ul>
+</div>
